@@ -1,62 +1,69 @@
-Objectives
+🚦 Smart Traffic Diversion System (ESP32 – Wokwi Simulation)
 
-Detect traffic congestion in real time
+📘 Overview
 
-Automatically divert or control traffic signals based on vehicle density
+  This project presents a Smart Traffic Diversion System for road congestion management, simulated using Wokwi and implemented with ESP32.
+The system dynamically controls traffic signals based on real-time vehicle density detected using ultrasonic sensors, aiming to reduce congestion and improve traffic flow efficiency.
 
-Reduce human intervention in traffic management
+   An LCD display and LED indicators provide real-time traffic status, while Blynk IoT enables remote monitoring of traffic conditions.
 
-Enable remote monitoring using IoT
+🎯 Objectives
 
-System Components
+   Detect traffic congestion in real time
 
-  ESP32 – Central controller with WiFi capability
+   Automatically divert or control traffic signals based on vehicle density
 
-  Ultrasonic Sensors (2x) – Vehicle distance and density detection
+   Reduce human intervention in traffic management
 
-  LCD Display (I2C) – Displays traffic condition (LOW / HIGH)
+   Enable remote monitoring using IoT
 
-  LED Indicators – Traffic signal status (Red / Yellow / Green)
+🧩 System Components
 
-  Breadboard – Circuit connections
+   ESP32 – Central controller with WiFi capability
 
-  Blynk IoT Platform – Remote monitoring dashboard
+   Ultrasonic Sensors (2×) – Vehicle distance and density detection
 
-Working Principle
+   LCD Display (I2C) – Displays traffic condition (LOW / HIGH)
 
-  Ultrasonic sensors continuously measure the distance of vehicles on both lanes
+   LED Indicators – Traffic signal status (Red / Yellow / Green)
 
-  ESP32 calculates vehicle density based on measured distance
+   Blynk IoT Platform – Remote monitoring dashboard
 
-  If congestion is detected on one lane:
+⚙️ Working Principle
 
-  That lane is stopped (RED)
+   Ultrasonic sensors continuously measure the distance of vehicles on both lanes
 
-  The opposite lane is allowed to move (GREEN)
+   ESP32 calculates vehicle density based on measured distance
 
-  Traffic status is displayed on the LCD
+   If congestion is detected on one lane:
 
-  Sensor data and traffic state are sent to Blynk IoT in real time
+   That lane is stopped (RED)
 
-Functionality
+   The opposite lane is allowed to move (GREEN)
 
-  Distance Measurement: Ultrasonic sensors calculate distance using echo pulse timing
+   Traffic status is displayed on the LCD
 
-  Traffic Status Display: LCD shows LOW or HIGH vehicle density
+   Sensor data and traffic state are sent to Blynk IoT in real time
 
-  Signal Indication: LEDs act as traffic signals
+🔍 Functionality
 
-IoT Monitoring: Traffic data is pushed to the Blynk dashboard
+   Distance Measurement: Ultrasonic sensors calculate distance using echo pulse timing
 
-Simulation Details
+   Traffic Status Display: LCD shows LOW or HIGH vehicle density
 
-Platform: Wokwi
+   Signal Indication: LEDs act as traffic signals
 
-Controller: ESP32
+   IoT Monitoring: Traffic data is pushed to the Blynk dashboard
 
-Language: Embedded C / Arduino
+🧪 Simulation Details
 
-Connectivity: WiFi + Blynk
+   Platform: Wokwi
+
+   Controller: ESP32
+
+   Language: Embedded C / Arduino
+
+   Connectivity: WiFi + Blynk
 
 🔗 Wokwi Simulation Link:
 HTTPS://WOKWI.COM/PROJECTS/399694412130711553
